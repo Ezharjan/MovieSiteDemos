@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/js_Home.js"></script>
+    <title>Filmes</title>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <nav class="nav-principal">
+            <div class="intens-nav-links">
+                <a class="link-nav" href="index.html">Home</a>
+                <a class="link-nav" href="quiz.html">Quiz</a>
+                <a class="link-nav" href="filme.html">Sobre os filmes</a>
+                <a class="link-nav" href="sobre.html">Sobre o Site</a>
+                <a class="link-nav3" href="#" onClick="MostraTeclado()">Teclado</a>
+                <input type="text" placeholder="Procure por um filme" id="input_Pesquisa" class="input-procura" />
+                <a class="link-nav2" href="#section-conteudo" onClick="Pesquisa()">Pesquisar</a>
+            </div>
+        </nav>
+
+        <div class="teclado" align="center" id="teclado">
+            <button onClick="AdicionaTexto(this)" class="teclas" value="1">1</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="2">2</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="3">3</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="4">4</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="5">5</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="6">6</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="7">7</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="8">8</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="9">9</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="0">0</button>
+            <br>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="q">q</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="w">w</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="e">e</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="r">r</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="t">t</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="y">y</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="u">u</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="i">i</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="o">o</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="p">p</button>
+            <button onClick="Remove()" class="teclas" value="remove">&larr;</button>
+            <br>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="a">a</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="s">s</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="d">d</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="f">f</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="g">g</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="h">h</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="j">j</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="k">k</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="l">l</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="ç">ç</button>
+            <button href="#section-conteudo" class="teclas" value="enter" onClick="Pesquisa()">Enter</button>
+            <br>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="z">z</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="x">x</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="c">c</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="v">v</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="b">b</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="n">n</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value="m">m</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value=",">,</button>
+            <button onClick="AdicionaTexto(this)" class="teclas" value=".">.</button>
+            <br>
+            <button onClick="AdicionaTexto(this)" class="teclas" value=" ">espaco</button>
+            <button class="teclas" value="espaco" onClick="MostraTeclado()">Fechar</button>
+            <br>
+
+        </div>
+
+
+        <div class="titulo">
+            <h1 class="heading-primary">
+                Filmes
+            </h1>
+            <h2 class="heading-secundary">
+                Descubrar as Novidades
+            </h2>
+        </div>
+    </header>
+
+    <div class="conteudo-pagina" id="section-conteudo">
+        <h2 class="heading-secundary-conteudo" id="tituloNovosFilmes">Novos Filmes</h2>
+        <div class="filmes-novos">
+            <img src="img/filme1.jpeg" alt="Filme 1" class="cartazes-filmes" id="filme1" />
+            <img src="img/filme2.jpg" alt="Filme 2" class="cartazes-filmes" id="filme2" />
+            <img src="img/filme3.jpg" alt="Filme 3" class="cartazes-filmes" id="filme3" />
+            <img src="img/filme4.jpg" alt="Filme 4" class="cartazes-filmes" id="filme4" />
+        </div>
+        <a href="filme.html" class="btn btn-white">Mais Filmes</a>
+    </div>
+
+    <section class="final">
+
+    </section>
+
+</body>
+
+</html>

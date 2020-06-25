@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: gordita, Helvetica, sans-serif;
+    color: white;
+    background-color: #000;
+}
+
+.wrapper {
+    width: 85%;
+    margin: 0 auto;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.wrapper2 {
+    width: 85%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header {
+    border-bottom: 1px solid #C1C0B9;
+}
+
+.header h1 {
+    font-size: 50px;
+    display: inline;
+}
+
+.header ul {
+    list-style: none;
+    float: right;
+    padding-right: 10px;
+}
+
+.header li {
+    display: inline;
+}
+
+.header a {
+    text-decoration: none;
+    color: #C1C0B9;
+    display: inline-block;
+    padding: 5px 8px 5px 8px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.header a:hover {
+    color: white;
+    border-bottom: 4px solid white;
+}
+
+div a.active2 {
+    color: red;
+}
+
+hr {
+    opacity: 0.4;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 5px 0px 20px;
+    color: white;
+    background-color: #171717;
+    font-size: 1vmax;
+    width: 100%;
+    background-image: url(footer.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin-top: 20px;
+}
+
+footer ul li {
+    display: flex;
+    list-style-type: none;
+    float: left;
+    width: 33.3%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+footer ul li:first-child {
+    padding-left: 8%;
+}
+
+footer ul li:nth-child(2) {
+    padding-left: 8%;
+}
+
+footer ul li:nth-child(3) {
+    padding-left: 10%;
+}
+
+footer ul li .text {
+    color: #C1C0B9;
+    font-size: 0.9vmax;
+    line-height: 20px;
+    position: relative;
+}
+
+.text h4 {
+    color: #FFFFFF;
+    font-size: 1.3vmax;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text a {
+    font-weight: bold;
+    display: block;
+    width: 5vmax;
+    ;
+    text-decoration: none;
+    color: #959595;
+}
+
+.text a:hover {
+    color: white;
+}
+
+@media screen and (max-width: 439px) {
+    .header,
+    .content {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 440px) and (max-width: 699px) {
+    .header,
+    .content {
+        width: 400px;
+        margin-left: 10%
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1099px) {
+    .header,
+    .content {
+        width: 640px;
+        margin-left: 10%
+    }
+}
+
+@media screen and (max-width: 439px) {
+    footer {
+        width: 100%;
+    }
+}

@@ -1,0 +1,288 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    background: linear-gradient(to right, #070000, #4C0001, #070000);
+}
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient( to right bottom, rgba(142, 14, 0, 0.70), rgba(31, 28, 24, 0.70)), url(../img/wallpaper.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.header-filme {
+    height: 75vh;
+    background-image: linear-gradient( to right bottom, rgba(142, 14, 0, 0.70), rgba(31, 28, 24, 0.70)), url(../img/capa-filme.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
+
+.heading-primary {
+    z-index: 0;
+    text-shadow: 0rem 1rem 2rem rgb(0, 0, 0, .2);
+    text-transform: uppercase;
+    font-size: 170px;
+    display: inline-block;
+    background-image: linear-gradient(to right, #C04848, #BD3F32);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.heading-secundary {
+    margin-top: -90px;
+    text-shadow: 0rem 1rem 2rem rgb(0, 0, 0, .2);
+    font-size: 60px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to bottom, #304352, #d7d2cc);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.titulo {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.nav-principal {
+    height: 60px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+.intens-nav-links {
+    padding-top: 10px;
+    margin-left: 70px;
+}
+
+.link-nav {
+    font-size: 25px;
+    padding-left: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.link-nav2 {
+    font-size: 25px;
+    padding-left: 15px;
+    color: #AD4D4F;
+    text-decoration: none;
+}
+
+.link-nav3 {
+    font-size: 25px;
+    padding-left: 15px;
+    color: #49737E;
+    text-decoration: none;
+}
+
+.input-procura {
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 120px;
+    padding-left: 10px;
+    height: 35px;
+    width: 250px;
+    border-radius: 100px;
+    border: none;
+    font-size: 16px;
+}
+
+.teclado {
+    visibility: hidden;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 100;
+    width: 800px;
+    background-color: #E8E8E8;
+    border-radius: 35px;
+    padding: 10px;
+    padding-top: 30px;
+    opacity: 0.7;
+}
+
+.teclas {
+    font-family: 'Fjalla One', sans-serif;
+    padding: 18px;
+    margin: 2px;
+    font-size: 30px;
+    border: solid;
+    border-color: black;
+    border-radius: 20px;
+    color: rgba(31, 31, 31, 1.00);
+}
+
+.teclas:hover {
+    background-color: #222222;
+    color: #FFFFFF;
+}
+
+.conteudo-pagina {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.heading-secundary-conteudo {
+    padding-top: 30px;
+    text-shadow: 0rem 1rem 2rem rgb(0, 0, 0, .2);
+    font-size: 80px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to bottom, #bdc3c7, #2c3e50);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.heading-secundary-quiz {
+    text-shadow: 0rem 1rem 2rem rgb(0, 0, 0, .2);
+    text-transform: uppercase;
+    font-size: 50px;
+    display: inline-block;
+    background-image: linear-gradient(to right, #C04848, #BD3F32);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.final {
+    height: 75vh;
+    background-image: linear-gradient( to right bottom, rgba(142, 14, 0, 0.70), rgba(31, 28, 24, 0.70)), url(../img/wallpaper2.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    text-align: center;
+    clip-path: polygon(0 25vh, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.filmes-novos {
+    margin-top: 70px;
+    padding: 50px;
+}
+
+.cartazes-filmes {
+    width: 320px;
+    height: 469px;
+    padding: 20px;
+    transition: all .2s ease-in-out;
+}
+
+.cartazes-filmes:hover {
+    transform: scale(1.1);
+}
+
+.btn-white {
+    background-color: #D03D3F;
+    color: #FFFFFF;
+    font-size: 22px;
+}
+
+.btn:link,
+.btn:visited {
+    margin-top: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 60px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+    animation-name: moveInTop;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgb(0, 0, 0, .2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgb(0, 0, 0, .2);
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.img-opc {
+    border-radius: 50px;
+    width: 300px;
+    height: 158px;
+    margin: 15px;
+    transition: all .2s ease-in-out;
+}
+
+.img-opc:hover {
+    transform: scale(1.1);
+}
+
+.video {
+    width: 900px;
+    height: 500px;
+    margin: 50px;
+}
+
+.conteudo-filme {
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.descricao {
+    font-size: 25px;
+    width: 500px;
+}
+
+.perguntas {
+    margin-top: 250px;
+    margin-bottom: 300px;
+    width: 830px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 11px 15px 41px 3px rgba(0, 0, 0, 0.75);
+    padding: 25px;
+}
+
+.titulo-perg {
+    font-size: 30px;
+    color: black;
+}
+
+.perg {
+    padding-top: 20px;
+    font-size: 40px;
+    color: black;
+}
+
+.btn-resp {
+    min-width: 230px;
+    height: 50px;
+    background-color: #D03D3F;
+    border: none;
+    border-radius: 70px;
+    color: white;
+    margin: 5px;
+    margin-top: 80px;
+    font-size: 20px;
+    padding: 5px 5px 5px 5px;
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Titulo do Filme</title>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <script type="text/javascript" src="js/js_Home.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="nav-principal">
+        <div class="intens-nav-links">
+            <a class="link-nav" href="index.html">Home</a>
+            <a class="link-nav" href="quiz.html">Quiz</a>
+            <a class="link-nav" href="filme.html">Sobre os filmes</a>
+            <a class="link-nav" href="sobre.html">Sobre o Site</a>
+        </div>
+    </nav>
+
+    <div align="center" id="TodosFilmes">
+        <h1 class="heading-secundary" style="margin-top: 30px">Escolha um filme</h1>
+        <div class="filmes-novos">
+            <img src="img/filme1.jpeg" alt="Filme 1" class="cartazes-filmes" onClick="CarregaFilme(1)" />
+            <img src="img/filme2.jpg" alt="Filme 2" class="cartazes-filmes" onClick="CarregaFilme(2)" />
+            <img src="img/filme3.jpg" alt="Filme 3" class="cartazes-filmes" onClick="CarregaFilme(3)" />
+            <img src="img/filme4.jpg" alt="Filme 4" class="cartazes-filmes" onClick="CarregaFilme(4)" />
+            <img src="img/filme5.jpg" alt="Filme 5" class="cartazes-filmes" onClick="CarregaFilme(5)" />
+            <img src="img/filme6.jpg" alt="Filme 6" class="cartazes-filmes" onClick="CarregaFilme(6)" />
+            <img src="img/filme7.jpg" alt="Filme 7" class="cartazes-filmes" onClick="CarregaFilme(7)" />
+            <img src="img/filme8.jpg" alt="Filme 8" class="cartazes-filmes" onClick="CarregaFilme(8)" />
+        </div>
+    </div>
+
+    <header class="header-filme" id="capaFilme">
+
+        <div align="left" class="conteudo-filme">
+            <h2 class="heading-secundary-quiz" id="TituloFilme"></h2>
+            <p class="descricao" id="ResumoFilme"></p>
+            <p class="descricao" style="font-weight: bold;" id="DataFilme"></p>
+            <p class="descricao" style="font-weight: bold;" id="EstrelasFilme"></p>
+        </div>
+    </header>
+    <div align="center">
+        <h2 class="heading-secundary-conteudo" id="textTrailer"></h2>
+        <iframe frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="video" id="TrailerFilme"></iframe>
+    </div>
+
+</body>
+
+</html>
